@@ -22,7 +22,7 @@ const Home = () => {
           {movies?.map((movie) => {
             return (
               <Link /*'movies/tt1201607'*/
-                to={`movies/${movie.imdbID}`} /* Router.js dinamik path yapısıyla aynı olacak şekilde imdbID ile routing işlemini yapınız */
+                to={`movies/${movie.imdbID}`} 
                 className="text-link"
                 key={movie.imdbID}
               >
