@@ -661,7 +661,9 @@ app.post('/login', (req, res) => {
     }
     if (!user) {
       // User not found
-      return res.status(404).send('User not found. Please register first.');
+      return res.status(404).send('User not found. Please register first. <br><a href="/register">Register</a>');
+      
+
     }
 
     // Check if the password matches
